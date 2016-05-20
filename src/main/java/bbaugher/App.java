@@ -17,12 +17,14 @@ public class App {
 
             List<String> tables = r.db("test").tableList().run(conn);
             if (!tables.contains("tv_shows")) {
+
                 // Creates the table
                 System.out.println("Creating table...");
                 r.db("test").tableCreate("tv_shows").run(conn);
                 System.out.println("Table created!");
                 System.out.println();
 
+                // Add some documents
                 System.out.println("Inserting shows...");
                 r.table("tv_shows").insert(r.array(
                         r.hashMap("name", "A Great Show!")
