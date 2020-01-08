@@ -6,7 +6,7 @@ An example using [RethinkDB](https://www.rethinkdb.com/) with the [Java client](
 Getting Started
 ---------------
 
-Check out [this file](src/main/java/bb021949/App.java).
+Check out [this file](src/main/java/bbaugher/App.java).
 
 Install and run RethinkDB locally.
 
